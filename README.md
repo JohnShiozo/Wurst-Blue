@@ -1,3 +1,11 @@
+Wurst-Blue Client for Minecraft Forge.
+
+Not wurst client, but THE worst client!
+
+Wurst-blue is the worst fork of wurst. Our plan with wurst-blue, is to be better than kami blue, but yet still be the worst fork of wurst. cookiedragon is still banned from this repository. This client is 100% skidded.
+
+Pull requests are WELCOME!
+
 # ForgeWurst
 
 Wurst Client for Minecraft Forge.

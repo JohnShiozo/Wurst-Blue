@@ -3,6 +3,7 @@ package me.zeroeightsix.kami;
 import com.google.common.eventbus.Subscribe;
 import me.zeroeightsix.kami.module.Mod;
 import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.GuiMultiplayer;
 import net.minecraft.client.renderer.texture.DynamicTexture;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
@@ -45,6 +46,10 @@ public class EventProcessor extends MinecraftInstance {
     @SubscribeEvent
     public void onTick(TickEvent.ClientTickEvent event) {
         ModuleManager.INSTANCE.onTick(event);
+
+        if (mc.currentScreen instanceof GuiMultiplayer) {
+            throw new RuntimeException("Fuck you, this is a singleplayer client ONLY!");
+        }
     }
 
     @SubscribeEvent
